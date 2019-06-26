@@ -6,8 +6,8 @@
   <title>Ashley Smith | Portfolio</title>
   <meta name="description" content="Ashley Smith | Portfolio">
   <meta name="author" content="Ashley Smith | Portfolio">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2bc727d338.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,9 +19,10 @@
     box-sizing: border-box;
   }
   body {
-    font-family: 'Raleway', sans-serif;
-    color: #333;
+    font-family: 'Nunito', sans-serif;
+    color: #1e163f;
     margin: 0;
+    background: #FFF;
   }
   body.open {
     overflow: hidden;
@@ -30,20 +31,14 @@
     height: 100vh;
     width: 100%;
     display: block;
-    background-image: url("code-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
     z-index: 1;
-    background-color: #202124;
-    background-blend-mode: overlay;
   }
   h1 {
-    font-size: 3em;
-    color: #FFF;
+    font-size: 4em;
+    line-height: 1em;
+    color: #1e163f;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -53,10 +48,34 @@
     max-width: 100%;
   }
   .title1 {
-    font-weight: 300;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0.25rem;
   }
   .title2 {
-    font-weight: 700;
+    font-weight: 200;
+    display: block;
+    font-size: 3rem;
+  }
+  .icons {
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    top: 55%;
+    position: absolute;
+    color: #1e163f;
+  }
+  .social {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #1e163f;
+  }
+  .social:hover {
+    color: #0076B5;
   }
   #gallery {
     position: relative;
@@ -77,9 +96,9 @@
     width: 60vw;
     background-size: 100%;
     background-position: 50%;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
     -webkit-transition: all ease 0.4s;
     -moz-transition: all ease 0.4s;
     transition: all ease 0.4s;
@@ -128,36 +147,36 @@
   }
   .item .content:hover {
     background-size: 105%;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
   }
   .item .hover {
     padding: 10%;
     opacity: 0;
     display: block;
     height: 100%;
-    background: rgba(71,201,229,0.9);
-    background: -moz-linear-gradient(45deg,rgba(71,201,229,0.9) 0,rgba(102,252,233,0.9) 100%);
-    background: -webkit-linear-gradient(45deg,rgba(71,201,229,0.9) 0,rgba(102,252,233,0.9) 100%);
-    background: linear-gradient(45deg,rgba(71,201,229,0.9) 0,rgba(102,252,233,0.9) 100%);
+    background: rgba(53,79,183,0.9);
+    background: -moz-linear-gradient(45deg,rgba(53,79,183,0.9) 0,rgba(0,35,178,0.9) 100%);
+    background: -webkit-linear-gradient(45deg,rgba(53,79,183,0.9) 0,rgba(0,35,178,0.9) 100%);
+    background: linear-gradient(45deg,rgba(53,79,183,0.9) 0,rgba(0,35,178,0.9) 100%);
     -webkit-transition: all ease 0.4s;
     -moz-transition: all ease 0.4s;
     transition: all ease 0.4s;
   }
+  .item .hover:hover {
+    cursor: pointer;
+  }
   .item .content:hover .hover {
     opacity: 1;
-    cursor: pointer;
   }
   .item .hover i {
     color: #FFF;
     position: absolute;
     right: 5%;
     top: 5%;
-    font-size: 2rem;
-    -webkit-text-shadow: 2px 2px 0px #35b9ce;
-    -moz-text-shadow: 2px 2px 0px #35b9ce;
-    text-shadow: 2px 2px 0px #35b9ce;
+    font-size: 1rem;
   }
   .hover h2 {
     color: #FFF;
@@ -165,9 +184,6 @@
     top: calc(50% - 14px);
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-text-shadow: 2px 2px 0px #35b9ce;
-    -moz-text-shadow: 2px 2px 0px #35b9ce;
-    text-shadow: 2px 2px 0px #35b9ce;
   }
   .overlay {
     padding: 5%;
@@ -194,10 +210,10 @@
   }
   .overlay .button {
     padding: 10px 20px;
-    color: #35b9ce;
+    color: #354FB7;
     text-decoration: none;
     background: #FFF;
-    border: solid 2px #35b9ce;
+    border: solid 2px #354FB7;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
@@ -206,7 +222,7 @@
     transition: all ease 0.4s;
   }
   .overlay .button:hover {
-    background: #35b9ce;
+    background: #354FB7;
     color: #FFF;
     -webkit-transition: all ease 0.4s;
     -moz-transition: all ease 0.4s;
@@ -228,7 +244,9 @@
     max-width: 700px;
     margin: 2em auto;
     display: block;
-    border: solid 4px #EAEAEA;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
   }
   @media (min-width:780px) {
     .item {
@@ -258,7 +276,20 @@ AOS.init();
 
 
 <section id="header">
-<h1><span class="title1">Ashley Smith's</span><span class="title2"> Portfolio</span></h1>
+
+<a class="social" href="https://www.linkedin.com/in/ashley-smith-02595266/" alt="linkedin"><i class="fab fa-linkedin"></i></a>
+
+<h1><span class="title1">Ashley Smith</span><span class="title2">UI Designer & Developer</span></h1>
+
+<div class="icons">
+  <i class="fab fa-html5" alt="HTML5"></i>
+  <i class="fab fa-css3" alt="CSS3"></i>
+  <i class="fab fa-js" alt="JS"></i>
+  <i class="fab fa-drupal" alt="Drupal"></i>
+  <i class="fab fa-adobe" alt="Adobe"></i>
+  <i class="fab fa-invision"calt="invision"></i>
+</div>
+
 </section>
 
 <section id="gallery">
@@ -307,14 +338,14 @@ AOS.init();
             <div data-aos="fade-up" class="content">
               <div class="hover toggle">
                 <i class="fas fa-plus"></i>
-                <h2>User dashboard designs 2019</h2>
+                <h2>User dashboard concepts</h2>
               </div>
             </div>
             <div class="overlay">
               <i class="toggle close fas fa-times"></i>
               <div class="overlay-content">
                 <div class="header">
-                  <h2>User dashboard designs 2019</h2>
+                  <h2>User dashboard concepts</h2>
                 </div>
                 <img src="dashboard-desktop.jpg">
                 <img src="dashboard-tablet.jpg">
@@ -329,14 +360,14 @@ AOS.init();
             <div data-aos="fade-up" class="content">
               <div class="hover toggle">
                 <i class="fas fa-plus"></i>
-                <h2>TARGETconnect redesign 2018</h2>
+                <h2>TARGETconnect marketing redesign</h2>
               </div>
             </div>
             <div class="overlay">
               <i class="toggle close fas fa-times"></i>
               <div class="overlay-content">
                 <div class="header">
-                  <h2>TARGETconnect redesign 2018</h2>
+                  <h2>TARGETconnect marketing redesign</h2>
                 </div>
                 <img src="connect-home.jpg">
                 <img src="connect-universities.jpg">
@@ -345,9 +376,6 @@ AOS.init();
               </div>
             </div>
       </figure>
-
-
-
 
 
     <figure class="item tcfw">
@@ -400,14 +428,14 @@ AOS.init();
           <div data-aos="fade-up" class="content">
             <div class="hover toggle">
               <i class="fas fa-plus"></i>
-              <h2>TARGETcareers homepage 2018</h2>
+              <h2>TARGETcareers homepage</h2>
             </div>
           </div>
           <div class="overlay">
             <i class="toggle close fas fa-times"></i>
             <div class="overlay-content">
               <div class="header">
-                <h2>TARGETcareers homepage 2018</h2>
+                <h2>TARGETcareers homepage</h2>
               </div>
               <img src="tcfwhome-mockup1.jpg">
             </div>
@@ -437,14 +465,14 @@ AOS.init();
   <div data-aos="fade-up" class="content">
         <div class="hover toggle">
           <i class="fas fa-plus"></i>
-          <h2>TARGETcareers homepage 2016</h2>
+          <h2>TARGETcareers homepage</h2>
         </div>
 </div>
 <div class="overlay">
   <i class="toggle close fas fa-times"></i>
   <div class="overlay-content">
     <div class="header">
-      <h2>TARGETcareers homepage 2016</h2>
+      <h2>TARGETcareers homepage</h2>
       <a class="button" target="_blank" href="https://targetcareers.co.uk/">Website <i class="fas fa-arrow-right"></i></a>
     </div>
     <img src="tchomepage2017-page.jpg">
@@ -513,6 +541,7 @@ AOS.init();
             </div>
       </figure>
 
+<!--
       <figure class="item loginregister">
               <div data-aos="fade-up" class="content">
                 <div class="hover toggle">
@@ -530,7 +559,7 @@ AOS.init();
                   <img src="register-mockup.jpg">
                 </div>
               </div>
-        </figure>
+        </figure> -->
 
 
 </div>
